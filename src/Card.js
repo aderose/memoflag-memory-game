@@ -7,7 +7,7 @@ function Card({ code, name, handleClick }) {
     <div className="card" onClick={handleClick}>
       <div className="img-container">
         <img
-          src={`http://www.geognos.com/api/en/countries/flag/${code}.png`}
+          src={`https://images.weserv.nl/?url=http://www.geognos.com/api/en/countries/flag/${code}.png&w=200`}
           alt={name}
         />
       </div>
