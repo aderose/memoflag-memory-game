@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <Header title="MemoFlag" score="0" topScore="0" />
-      <CardBoard />
+      <CardBoard noOfCards={12} />
     </div>
   );
 }
