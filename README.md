@@ -7,4 +7,4 @@ A simple memory game in which the user selects on a displayed flags.
 
 The game was created using React.
 
-[View the implementation here.](https://aderose.github.io/memory-game/)
+[View the implementation here.](hhttps://aderose.github.io/memoflag-memory-game/index.html)
