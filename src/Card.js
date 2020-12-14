@@ -2,13 +2,16 @@ import React from 'react';
 
 import './styles/Card.css';
 
-function Card(props) {
+function Card({ code, name }) {
   return (
     <div className="card">
       <div className="img-container">
-        <img src={props.src} alt={props.alt} />
+        <img
+          src={`http://www.geognos.com/api/en/countries/flag/${code}.png`}
+          alt={name}
+        />
       </div>
-      <p>{props.description}</p>
+      <p>{name}</p>
     </div>
   );
 }
