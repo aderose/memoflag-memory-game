@@ -4,7 +4,6 @@ header {
   color: white;
   background: linear-gradient(to right, #fb913c, #ef4444, #ec4899);
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1em;
 }
 
 header h1 {
