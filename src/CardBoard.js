@@ -1,22 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Card from './Card';
-
-import countries from './countries';
-import Utils from './Utils';
 
 import './styles/CardBoard.css';
 
-function CardBoard({ noOfCards }) {
-  const [cards, setCards] = useState(
-    Utils.generateRandomNumbers([], countries.length, noOfCards).map(
-      (index) => countries[index],
-    ),
-  );
-
+function CardBoard({ cards, handleClick }) {
   return (
     <div className="card-board container">
-      {cards.map(({ code, name }) => (
-        <Card code={code} name={name} key={name} />
+      {cards.map(({ code, name }, index) => (
+        <Card
+          code={code}
+          name={name}
+          handleClick={handleClick(index)}
+          key={name}
+        />
       ))}
     </div>
   );
