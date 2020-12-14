@@ -1,0 +1,25 @@
+.card {
+  background-color: white;
+  width: fit-content;
+  margin: 1em;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card img {
+  width: 200px;
+}
+
+.card .img-container {
+  margin: auto 0;
+}
+
+.card p {
+  text-align: center;
+  padding: 0.5em 0;
+  font-style: italic;
+}
