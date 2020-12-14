@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/memoflag-memory-game/static/css/main.78f96107.chunk.css",
+    "main.js": "/memoflag-memory-game/static/js/main.9316b90f.chunk.js",
+    "main.js.map": "/memoflag-memory-game/static/js/main.9316b90f.chunk.js.map",
+    "runtime-main.js": "/memoflag-memory-game/static/js/runtime-main.14691fc2.js",
+    "runtime-main.js.map": "/memoflag-memory-game/static/js/runtime-main.14691fc2.js.map",
+    "static/js/2.ad292d5b.chunk.js": "/memoflag-memory-game/static/js/2.ad292d5b.chunk.js",
+    "static/js/2.ad292d5b.chunk.js.map": "/memoflag-memory-game/static/js/2.ad292d5b.chunk.js.map",
+    "index.html": "/memoflag-memory-game/index.html",
+    "static/css/main.78f96107.chunk.css.map": "/memoflag-memory-game/static/css/main.78f96107.chunk.css.map",
+    "static/js/2.ad292d5b.chunk.js.LICENSE.txt": "/memoflag-memory-game/static/js/2.ad292d5b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.14691fc2.js",
+    "static/js/2.ad292d5b.chunk.js",
+    "static/css/main.78f96107.chunk.css",
+    "static/js/main.9316b90f.chunk.js"
+  ]
+}
