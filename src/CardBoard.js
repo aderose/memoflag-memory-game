@@ -1,25 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Card from './Card';
+
+import countries from './countries';
+import Utils from './Utils';
+
 import './styles/CardBoard.css';
 
-function CardBoard(props) {
+function CardBoard({ noOfCards }) {
+  const [cards, setCards] = useState(
+    Utils.generateRandomNumbers([], countries.length, noOfCards).map(
+      (index) => countries[index],
+    ),
+  );
+
   return (
     <div className="card-board container">
-      <Card
-        src="http://www.geognos.com/api/en/countries/flag/IT.png"
-        alt="Italy Flag"
-        description="Italy"
-      />
-      <Card
-        src="http://www.geognos.com/api/en/countries/flag/GB.png"
-        alt="Great Britain Flag"
-        description="Great Britain"
-      />
-      <Card
-        src="http://www.geognos.com/api/en/countries/flag/DE.png"
-        alt="Germany Flag"
-        description="Germany"
-      />
+      {cards.map(({ code, name }) => (
+        <Card code={code} name={name} key={name} />
+      ))}
     </div>
   );
 }
