@@ -8,9 +8,19 @@ const Utils = (() => {
     return generateRandomNumbers(arr, max, amount);
   };
 
-  function shuffle() {
-    return null;
-  }
+  const shuffle = (array) => {
+    let currentIndex = array.length;
+
+    while (currentIndex !== 0) {
+      const randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+
+      const temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+    return array;
+  };
 
   return { generateRandomNumbers, shuffle };
 })();
